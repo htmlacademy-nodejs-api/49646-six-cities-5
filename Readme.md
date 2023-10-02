@@ -1,7 +1,7 @@
 # Личный проект «Шесть городов»
 
-* Студент: [Дмитрий Кузьмин](https://up.htmlacademy.ru/nodejs-api/5/user/49646).
-* Наставник: `Неизвестно`.
+- Студент: [Дмитрий Кузьмин](https://up.htmlacademy.ru/nodejs-api/5/user/49646).
+- Наставник: [Ярослав Денисенко](https://htmlacademy.ru/profile/id2412489).
 
 ---
 
