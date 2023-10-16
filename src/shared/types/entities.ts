@@ -1,0 +1,60 @@
+export type User = {
+  name: string;
+  email: string;
+  avatar?: string;
+  password: string;
+  role: string;
+};
+
+export enum City {
+  Paris = 'Paris',
+  Cologne = 'Cologne',
+  Brussels = 'Brussels',
+  Amsterdam = 'Amsterdam',
+  Hamburg = 'Hamburg',
+  Dusseldorf = 'Dusseldorf',
+}
+
+export enum HouseType {
+  Apartment = 'apartment',
+  House = 'house',
+  Room = 'room',
+  Hotel = 'hotel',
+}
+
+export enum Conveniences {
+  Breakfast = 'Breakfast',
+  AirConditioning = 'Air conditioning',
+  LaptopFriendlyWorkspace = 'Laptop friendly workspace',
+  BabySeat = 'Baby seat',
+  Washer = 'Washer',
+  Towels = 'Towels',
+  Fridge = 'Fridge',
+}
+
+export type Offer = {
+  name: string;
+  description: string;
+  publicationDate: Date;
+  city: City;
+  previewPhotos: string[];
+  isPremium: boolean;
+  isFavorite: boolean;
+  rating: number;
+  houseType: HouseType;
+  roomsCount: number;
+  guestsCount: number;
+  price: number;
+  conveniences: Conveniences[];
+  author: string;
+  commentsCount: number;
+  coordinates: { latitude: number; longitude: number };
+};
+
+export type Commentary = {
+  comment: string;
+  createdAt: Date;
+  rating: number;
+  password: string;
+  author: string;
+};
