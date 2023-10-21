@@ -16,10 +16,10 @@ export enum City {
 }
 
 export enum HouseType {
-  Apartment = 'apartment',
-  House = 'house',
-  Room = 'room',
-  Hotel = 'hotel',
+  Apartment = 'Apartment',
+  House = 'House',
+  Room = 'Room',
+  Hotel = 'Hotel',
 }
 
 export enum Conveniences {
@@ -57,4 +57,15 @@ export type Commentary = {
   rating: number;
   password: string;
   author: string;
+};
+
+export type MockServerData = {
+  categories: string[];
+  titles: string[];
+  descriptions: string[];
+  offerImages: string[];
+  categoryImages: string[];
+  users: string[];
+  emails: string[];
+  avatars: string[];
 };
