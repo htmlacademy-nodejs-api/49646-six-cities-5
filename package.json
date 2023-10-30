@@ -41,11 +41,13 @@
     "npm": ">=8"
   },
   "dependencies": {
+    "@typegoose/typegoose": "11.6.0",
     "convict": "6.2.4",
     "convict-format-with-validator": "6.2.0",
     "dayjs": "1.11.10",
     "got": "13.0.0",
     "inversify": "6.0.2",
+    "mongoose": "7.6.3",
     "pino": "8.16.0",
     "reflect-metadata": "0.1.13"
   }

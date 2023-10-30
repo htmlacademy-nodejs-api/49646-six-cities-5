@@ -1,9 +1,13 @@
 export type User = {
-  name: string;
+  // name: string;
+  // email: string;
+  // avatar?: string;
+  // password: string;
+  // role: string;
   email: string;
-  avatar?: string;
-  password: string;
-  role: string;
+  avatarPath: string;
+  firstname: string;
+  lastname: string;
 };
 
 export enum City {
@@ -46,7 +50,11 @@ export type Offer = {
   guestsCount: number;
   price: number;
   conveniences: Conveniences[];
-  author: string;
+  firstname: string;
+  lastname: string;
+  email: string;
+  avatar: string;
+  // author: string;
   commentsCount: number;
   coordinates: { latitude: number; longitude: number };
 };

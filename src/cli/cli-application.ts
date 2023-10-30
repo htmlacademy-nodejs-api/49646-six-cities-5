@@ -1,4 +1,4 @@
-import { Command } from './commands/types.js';
+import { Command } from './commands/command.interface.js';
 import { CommandParser } from './command-parser.js';
 import { HelpCommand } from './index.js';
 
