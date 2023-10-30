@@ -15,7 +15,10 @@ export function createOffer(offerData: string): Offer {
     guestsCount,
     price,
     conveniences,
-    author,
+    firstname,
+    lastname,
+    email,
+    avatar,
     commentsCount,
     coordinates,
   ] = offerData.replace('\n', '').split('\t');
@@ -34,7 +37,10 @@ export function createOffer(offerData: string): Offer {
     guestsCount: Number(guestsCount),
     price: Number(price),
     conveniences: conveniences.split(';') as Conveniences[],
-    author,
+    firstname,
+    lastname,
+    email,
+    avatar,
     commentsCount: Number(commentsCount),
     coordinates: {
       latitude: Number(coordinates.split(';')[0]),

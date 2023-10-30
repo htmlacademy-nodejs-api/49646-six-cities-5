@@ -6,7 +6,7 @@ import {
   HouseType,
   MockServerData,
 } from '../../types/entities.js';
-import { generateRandomValue, getRandomItem } from '../../utils/index.js';
+import { generateRandomValue, getRandomItem } from '../../helpers/index.js';
 
 const cityCoords = {
   Paris: { latitude: 48.85661, longitude: 2.351499 },
@@ -47,8 +47,12 @@ export class TSVOfferGenerator implements OfferGenerator {
     const price = generateRandomValue(MIN_PRICE, MAX_PRICE).toString();
     const conveniences = getRandomItem(Object.values(Conveniences));
     const author = getRandomItem(this.mockData.users);
+    const email = getRandomItem(this.mockData.emails);
+    const avatar = getRandomItem(this.mockData.avatars);
     const commentsCount = generateRandomValue(0, 10, 0).toString();
     const coords = `${getCoords(city).latitude};${getCoords(city).longitude}`;
+
+    const [firstname, lastname] = author.split(' ');
 
     return [
       title,
@@ -64,7 +68,10 @@ export class TSVOfferGenerator implements OfferGenerator {
       guestsCount,
       price,
       conveniences,
-      author,
+      firstname,
+      lastname,
+      email,
+      avatar,
       commentsCount,
       coords,
     ].join('\t');

@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { Command } from './types.js';
+import { Command } from './command.interface.js';
 
 export class HelpCommand implements Command {
   getName() {
